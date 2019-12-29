@@ -23,10 +23,10 @@ public class PlayerControls : MonoBehaviour
         //moveVelocity = moveInput.normalized * speed;
 
         if(Input.GetKeyDown(moveUp))
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 3 , 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed , 0);
 
         if(Input.GetKeyDown(moveDown))
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -3 , 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, speed * -1 , 0);
 
     }
 
